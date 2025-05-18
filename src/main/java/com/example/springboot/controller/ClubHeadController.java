@@ -93,6 +93,7 @@ public class ClubHeadController {
 	         String category = request.getParameter("category");
 	         String description = request.getParameter("description");
 	         String time = request.getParameter("time");
+	         String slots = request.getParameter("slots");
 	         String date = request.getParameter("date");
 
 	         // Handle file upload
@@ -106,6 +107,7 @@ public class ClubHeadController {
 	         e.setEvent(event);
 	         e.setDescription(description);
 	         e.setDate(date);
+	         e.setSlots(slots);
 	         e.setTime(time);
 	         e.setImage(blob);
 

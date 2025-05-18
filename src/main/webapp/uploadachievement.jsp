@@ -6,14 +6,7 @@
     HttpSession httpSession = request.getSession();
     User user = (User) httpSession.getAttribute("user");
 %>
-<
-<% 
-User users = (User) session.getAttribute("users"); 
-if (users == null) { 
-    response.sendRedirect("usersessionexpiry"); 
-    return; 
-} 
-%>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

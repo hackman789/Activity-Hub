@@ -172,6 +172,10 @@ if (user == null) {
 
         <div class="content">
             <h2>My Achievements</h2>
+            <!-- Achievement Count Placeholder -->
+            <div id="achievement-count" style="text-align: center; margin-bottom: 20px; font-size: 1.2rem; color: var(--text-secondary);">
+                <!-- The count will be dynamically inserted here -->
+            </div>
 
             <div class="achievements-container">
                 <c:if test="${not empty achievements}">
@@ -199,5 +203,7 @@ if (user == null) {
             </div>
         </div>
     </div>
+
+   
 </body>
 </html>

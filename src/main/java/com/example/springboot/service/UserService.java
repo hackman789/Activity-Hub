@@ -19,6 +19,7 @@ public interface UserService {
 	public String updateAchievement(AddAchievement achievement);
 	public List<AddAchievement> findbyregisterId(String registerId);
     public AddAchievement findById(long id);
+   
     public List<Event> ViewAllEvents();
     
 

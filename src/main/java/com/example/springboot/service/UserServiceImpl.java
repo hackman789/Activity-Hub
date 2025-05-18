@@ -92,7 +92,10 @@ public class UserServiceImpl implements UserService
 	  
 		return eventRepository.findAll();
 	}
+
+	
 }
+
 
 
 

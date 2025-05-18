@@ -10,7 +10,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "event_data")
+@Table(name = "event_daata")
 public class Event
 {
   @Id
@@ -29,7 +29,8 @@ public class Event
   private String time;
   @Column(name="event_date",length = 100)
   private String date;
- 
+  @Column(name ="event_slots",length=100)
+  private String slots;
   @Column(name="event_image",nullable = false)
   private Blob image;
 public int getId() {
@@ -79,6 +80,12 @@ public Blob getImage() {
 }
 public void setImage(Blob image) {
 	this.image = image;
+}
+public String getSlots() {
+	return slots;
+}
+public void setSlots(String slots) {
+	this.slots = slots;
 }
   
   
